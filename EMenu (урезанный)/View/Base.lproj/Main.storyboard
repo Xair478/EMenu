@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bge-TE-wEC">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ByT-CS-Obq">
+            <objects>
+                <viewController id="Y5a-aa-1E5" customClass="ViewController" customModule="EMenu__урезанныи__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6N-19-DlR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="H8M-hI-I9p">
+                                <rect key="frame" x="20" y="687" width="350" height="103"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTr-Q5-XCs" customClass="CustomButton" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="aWc-eh-SSf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign up"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="zxP-0O-o5d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yiw-yq-oqq" customClass="CustomButton" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="62" width="350" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="HJQ-0s-FzC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign in"/>
+                                        <connections>
+                                            <segue destination="VBm-qj-R1G" kind="show" id="EKR-nc-FbR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IR7-Uo-66h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H8M-hI-I9p" firstAttribute="leading" secondItem="IR7-Uo-66h" secondAttribute="leading" constant="20" id="DMx-W8-w0L"/>
+                            <constraint firstItem="IR7-Uo-66h" firstAttribute="bottom" secondItem="H8M-hI-I9p" secondAttribute="bottom" constant="20" id="eBx-1W-EbL"/>
+                            <constraint firstItem="IR7-Uo-66h" firstAttribute="trailing" secondItem="H8M-hI-I9p" secondAttribute="trailing" constant="20" id="ymS-LP-vFm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jcc-gL-cY0"/>
+                    <connections>
+                        <outlet property="signInButton" destination="Yiw-yq-oqq" id="peK-hv-scH"/>
+                        <outlet property="signUpButton" destination="TTr-Q5-XCs" id="mzh-FX-SdH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDK-Ic-9cm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996.92307692307691" y="-2.1327014218009479"/>
+        </scene>
+        <!--Ign Up View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SIgnUpViewController" customModule="EMenu__урезанныи__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CustomButton" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="mzD-Mr-KpY">
+                                <rect key="frame" x="20" y="87.000000000000028" width="350" height="483.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EUX-tx-bGl">
+                                        <rect key="frame" x="10" y="0.0" width="330" height="43.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMenu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJr-Lz-zqK">
+                                                <rect key="frame" x="113.66666666666666" y="0.0" width="102.66666666666666" height="43.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="33"/>
+                                                <color key="textColor" name="Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="562-Jx-WBn">
+                                        <rect key="frame" x="10" y="89.333333333333343" width="330" height="31.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9c-7f-qt3">
+                                                <rect key="frame" x="120.66666666666666" y="0.0" width="88.666666666666657" height="31.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-Hn-FWG">
+                                        <rect key="frame" x="20" y="166.66666666666663" width="310" height="230"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cbi-4W-zYH">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x76-9Q-Y6p" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="Vwg-Mm-Djd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="x76-9Q-Y6p" secondAttribute="trailing" id="LWi-8w-hD0"/>
+                                                    <constraint firstItem="x76-9Q-Y6p" firstAttribute="leading" secondItem="Cbi-4W-zYH" secondAttribute="leading" id="RJM-L2-DwP"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k8k-oY-iyT">
+                                                <rect key="frame" x="0.0" y="63.000000000000028" width="310" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="fjT-zQ-fKB" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="Aus-zU-EQu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="fjT-zQ-fKB" secondAttribute="trailing" id="HDr-xb-aBv"/>
+                                                    <constraint firstItem="fjT-zQ-fKB" firstAttribute="leading" secondItem="k8k-oY-iyT" secondAttribute="leading" id="RK0-m6-AfO"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tHC-a3-9aM">
+                                                <rect key="frame" x="0.0" y="126.00000000000003" width="310" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="fes-ub-HSM" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="UHc-tY-iOq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="fes-ub-HSM" firstAttribute="leading" secondItem="tHC-a3-9aM" secondAttribute="leading" id="9zk-7L-6dK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fes-ub-HSM" secondAttribute="trailing" id="t3p-3D-HkN"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L0j-2Q-DbV">
+                                                <rect key="frame" x="0.0" y="189.00000000000003" width="310" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="CSn-te-CgW" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="fsk-3o-yjq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="CSn-te-CgW" firstAttribute="leading" secondItem="L0j-2Q-DbV" secondAttribute="leading" id="4kX-f2-wgu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CSn-te-CgW" secondAttribute="trailing" id="nxl-Mb-qse"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-3" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-7S-lyc">
+                                        <rect key="frame" x="10" y="442.66666666666663" width="330" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-rL-tA1" customClass="CustomButton" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="1d0-Vd-onT"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Sign up"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sign up"/>
+                                                <connections>
+                                                    <action selector="signUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dip-wp-wcx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KUj-7S-lyc" secondAttribute="trailing" constant="10" id="7Ok-az-zEM"/>
+                                    <constraint firstAttribute="trailing" secondItem="WQu-Hn-FWG" secondAttribute="trailing" constant="20" id="9C7-oC-ehj"/>
+                                    <constraint firstItem="EUX-tx-bGl" firstAttribute="leading" secondItem="mzD-Mr-KpY" secondAttribute="leading" constant="10" id="Fln-Ab-snJ"/>
+                                    <constraint firstItem="KUj-7S-lyc" firstAttribute="leading" secondItem="mzD-Mr-KpY" secondAttribute="leading" constant="10" id="IHn-IC-WdK"/>
+                                    <constraint firstItem="WQu-Hn-FWG" firstAttribute="leading" secondItem="mzD-Mr-KpY" secondAttribute="leading" constant="20" id="LQ7-4n-l3G"/>
+                                    <constraint firstAttribute="trailing" secondItem="562-Jx-WBn" secondAttribute="trailing" constant="10" id="N02-JH-SJo"/>
+                                    <constraint firstItem="562-Jx-WBn" firstAttribute="leading" secondItem="mzD-Mr-KpY" secondAttribute="leading" constant="10" id="b0u-VP-tfl"/>
+                                    <constraint firstAttribute="trailing" secondItem="EUX-tx-bGl" secondAttribute="trailing" constant="10" id="dk1-aE-z8e"/>
+                                    <constraint firstItem="EUX-tx-bGl" firstAttribute="top" secondItem="mzD-Mr-KpY" secondAttribute="top" id="rlH-mG-ZCm"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N6w-Kn-B0E">
+                                <rect key="frame" x="10" y="610.66666666666663" width="370" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlw-16-SKW">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Already have an account? Sign in"/>
+                                        <connections>
+                                            <segue destination="VBm-qj-R1G" kind="show" id="y9j-MH-F5A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="N6w-Kn-B0E" firstAttribute="top" secondItem="mzD-Mr-KpY" secondAttribute="bottom" constant="40" id="BIU-0o-bSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mzD-Mr-KpY" secondAttribute="trailing" constant="20" id="Pf2-sb-xRL"/>
+                            <constraint firstItem="N6w-Kn-B0E" firstAttribute="top" secondItem="mzD-Mr-KpY" secondAttribute="bottom" constant="40" id="eCq-UR-AAq"/>
+                            <constraint firstItem="N6w-Kn-B0E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lAd-2z-KmX"/>
+                            <constraint firstItem="mzD-Mr-KpY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pBz-H4-6Mv"/>
+                            <constraint firstItem="mzD-Mr-KpY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="vz0-Ro-z2R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N6w-Kn-B0E" secondAttribute="trailing" constant="10" id="xFe-Nh-xo1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5XE-Gq-qAn"/>
+                    <connections>
+                        <outlet property="confirmTextField" destination="CSn-te-CgW" id="D8N-oX-OeE"/>
+                        <outlet property="emailTextField" destination="fjT-zQ-fKB" id="BCt-0y-9Nb"/>
+                        <outlet property="loginTextField" destination="x76-9Q-Y6p" id="JhH-jn-Vba"/>
+                        <outlet property="logoLabel" destination="GJr-Lz-zqK" id="ZKZ-du-ffz"/>
+                        <outlet property="passwordTextField" destination="fes-ub-HSM" id="NBw-XJ-2jZ"/>
+                        <outlet property="signInRefButton" destination="Mlw-16-SKW" id="nqt-XY-IMm"/>
+                        <outlet property="signUpButton" destination="xR4-rL-tA1" id="89z-fV-cEe"/>
+                        <outlet property="signUpLabel" destination="B9c-7f-qt3" id="JiQ-8l-pDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929.2307692307691" y="-308.53080568720378"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="RwD-ZV-2eg">
+            <objects>
+                <viewController id="VuP-Mx-pa0" customClass="HomeViewController" customModule="EMenu__урезанныи__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0kX-Qw-PDW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сработало" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT3-VA-gxD">
+                                <rect key="frame" x="128" y="406" width="135" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f5A-dt-oZ3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Van-DY-TQg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIT-Eg-QU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2903.0769230769229" y="-2.1327014218009479"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="IuN-L7-s2y">
+            <objects>
+                <viewController id="VBm-qj-R1G" customClass="LoginViewController" customModule="EMenu__урезанныи__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6rh-53-7HP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RAF-Qb-UJS">
+                                <rect key="frame" x="10" y="547.66666666666663" width="370" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITK-Pv-vFa">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Dont have an account? Sign up"/>
+                                        <connections>
+                                            <action selector="authButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtP-pI-7I8"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="xOd-c9-hzA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-Bc-rb7">
+                                <rect key="frame" x="20" y="87.000000000000028" width="350" height="420.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="THN-s5-HrP">
+                                        <rect key="frame" x="10" y="0.0" width="330" height="43.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMenu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohh-0l-FjW">
+                                                <rect key="frame" x="113.66666666666666" y="0.0" width="102.66666666666666" height="43.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="33"/>
+                                                <color key="textColor" name="Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZtR-Vj-DCJ">
+                                        <rect key="frame" x="10" y="89.333333333333343" width="330" height="31.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-ez-E25">
+                                                <rect key="frame" x="125.33333333333334" y="0.0" width="79.666666666666657" height="31.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="ASW-4L-yEc">
+                                        <rect key="frame" x="20" y="166.66666666666666" width="310" height="166.99999999999997"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xYB-LU-ABd">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IXz-Sx-bq3" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="eMw-hy-PaN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="loginTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="HYM-oL-YKU"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="IXz-Sx-bq3" firstAttribute="leading" secondItem="xYB-LU-ABd" secondAttribute="leading" id="3Wg-l8-oYM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IXz-Sx-bq3" secondAttribute="trailing" id="pnc-d5-2lj"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cu6-Bs-xjv">
+                                                <rect key="frame" x="0.0" y="63.000000000000028" width="310" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="xc6-Ue-kZZ" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="FHB-Z6-zgr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                        <connections>
+                                                            <action selector="emailTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="53g-J4-Dbr"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="xc6-Ue-kZZ" secondAttribute="trailing" id="bMt-fG-P3x"/>
+                                                    <constraint firstItem="xc6-Ue-kZZ" firstAttribute="leading" secondItem="Cu6-Bs-xjv" secondAttribute="leading" id="gUh-xZ-Qkx"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Ie-wa-bhO">
+                                                <rect key="frame" x="0.0" y="126.00000000000003" width="310" height="41"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3ag-yB-FyN" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="41" id="MEV-8e-zFs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <connections>
+                                                            <action selector="passwordTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="6dd-Ub-UrW"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="3ag-yB-FyN" secondAttribute="trailing" id="gUg-Qk-eM9"/>
+                                                    <constraint firstItem="3ag-yB-FyN" firstAttribute="leading" secondItem="0Ie-wa-bhO" secondAttribute="leading" id="wZX-Hh-yDE"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-3" translatesAutoresizingMaskIntoConstraints="NO" id="ke5-d4-pyF">
+                                        <rect key="frame" x="10" y="379.66666666666669" width="330" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlF-ah-NDu" customClass="CustomButton" customModule="EMenu__урезанныи__" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="4GC-Rb-yf7"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Sign up"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sign in"/>
+                                                <connections>
+                                                    <action selector="signInTapped:" destination="VBm-qj-R1G" eventType="touchUpInside" id="UYM-yK-pPW"/>
+                                                    <action selector="signUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YII-Ze-3NT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ASW-4L-yEc" secondAttribute="trailing" constant="20" id="0Cx-w6-QAH"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZtR-Vj-DCJ" secondAttribute="trailing" constant="10" id="8az-Ko-g9p"/>
+                                    <constraint firstItem="THN-s5-HrP" firstAttribute="leading" secondItem="LEq-Bc-rb7" secondAttribute="leading" constant="10" id="Ajo-KN-bqT"/>
+                                    <constraint firstItem="ke5-d4-pyF" firstAttribute="leading" secondItem="LEq-Bc-rb7" secondAttribute="leading" constant="10" id="P4T-mi-4V1"/>
+                                    <constraint firstItem="ZtR-Vj-DCJ" firstAttribute="leading" secondItem="LEq-Bc-rb7" secondAttribute="leading" constant="10" id="Ptm-7w-bPV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ke5-d4-pyF" secondAttribute="trailing" constant="10" id="YX7-4S-DAx"/>
+                                    <constraint firstItem="ASW-4L-yEc" firstAttribute="leading" secondItem="LEq-Bc-rb7" secondAttribute="leading" constant="20" id="adb-cn-k6f"/>
+                                    <constraint firstItem="THN-s5-HrP" firstAttribute="top" secondItem="LEq-Bc-rb7" secondAttribute="top" id="dWg-oI-7fy"/>
+                                    <constraint firstAttribute="trailing" secondItem="THN-s5-HrP" secondAttribute="trailing" constant="10" id="kZf-sj-VqV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eIa-oA-EQ9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RAF-Qb-UJS" firstAttribute="top" secondItem="LEq-Bc-rb7" secondAttribute="bottom" constant="40" id="059-sk-HyU"/>
+                            <constraint firstItem="eIa-oA-EQ9" firstAttribute="trailing" secondItem="RAF-Qb-UJS" secondAttribute="trailing" constant="10" id="8Nd-7h-sdo"/>
+                            <constraint firstItem="LEq-Bc-rb7" firstAttribute="leading" secondItem="eIa-oA-EQ9" secondAttribute="leading" constant="20" id="D39-UC-XLY"/>
+                            <constraint firstItem="RAF-Qb-UJS" firstAttribute="top" secondItem="LEq-Bc-rb7" secondAttribute="bottom" constant="40" id="IDy-ct-fVO"/>
+                            <constraint firstItem="eIa-oA-EQ9" firstAttribute="trailing" secondItem="LEq-Bc-rb7" secondAttribute="trailing" constant="20" id="R3E-A9-Zho"/>
+                            <constraint firstItem="RAF-Qb-UJS" firstAttribute="leading" secondItem="eIa-oA-EQ9" secondAttribute="leading" constant="10" id="j21-wZ-ImB"/>
+                            <constraint firstItem="LEq-Bc-rb7" firstAttribute="top" secondItem="eIa-oA-EQ9" secondAttribute="top" constant="40" id="xqM-FH-gLs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VHe-rO-tTq"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="xc6-Ue-kZZ" id="1bh-N2-vBp"/>
+                        <outlet property="loginTextField" destination="IXz-Sx-bq3" id="8Iu-Oo-tgU"/>
+                        <outlet property="logoLabel" destination="Ohh-0l-FjW" id="6oX-8l-gog"/>
+                        <outlet property="passwordTextField" destination="3ag-yB-FyN" id="cBP-nx-i2N"/>
+                        <outlet property="regLinkButton" destination="ITK-Pv-vFa" id="Gq7-Qb-5eS"/>
+                        <outlet property="signInButton" destination="SlF-ah-NDu" id="CDC-vm-7P2"/>
+                        <outlet property="signInLabel" destination="cyX-ez-E25" id="Xbk-9x-gdL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BU1-P3-7dD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929.2307692307691" y="372.51184834123222"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G6K-LG-1g1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bge-TE-wEC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dvf-Pf-5Jq">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y5a-aa-1E5" kind="relationship" relationship="rootViewController" id="Bcg-P1-jr7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8d0-85-23n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.692307692307693" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="y9j-MH-F5A"/>
+        <segue reference="xOd-c9-hzA"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <namedColor name="Color">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

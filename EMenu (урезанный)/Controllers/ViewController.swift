@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - Outlets
+    @IBOutlet weak var signUpButton: CustomButton!
+    
+    @IBOutlet weak var signInButton: CustomButton!
+    
+    
+    
+    
+    //MARK: -Method DidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      readLine()
     }
 
-
+    
+    
 }
+
 
