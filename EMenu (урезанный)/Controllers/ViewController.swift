@@ -17,10 +17,8 @@ class ViewController: UIViewController {
     
     
     
-    //MARK: -Method DidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-      readLine()
     }
 
     
