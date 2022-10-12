@@ -101,7 +101,7 @@ class SIgnUpViewController: UIViewController {
                             self.showError("User havent been created")
                         }
                     }
-                    self.transitionToHome()
+                
                 }
             }
             
