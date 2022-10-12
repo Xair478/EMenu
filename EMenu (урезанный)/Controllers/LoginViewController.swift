@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var regLinkButton: UIButton!
     
+    @IBOutlet weak var errorLabel: UILabel!
     
     
     
