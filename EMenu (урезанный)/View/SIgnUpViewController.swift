@@ -119,9 +119,9 @@ class SIgnUpViewController: UIViewController {
     }
 
     func transitionToHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let HomeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeTabBarViewController) as? HomeTabViewController
         
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
+        self.view.window?.rootViewController = HomeVC
+        self.view.window?.makeKeyAndVisible()
     }
 }
