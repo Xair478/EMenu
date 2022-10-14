@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -255,10 +256,10 @@
             </objects>
             <point key="canvasLocation" x="1929.2307692307691" y="-308.53080568720378"/>
         </scene>
-        <!--Home View Controller-->
+        <!--View Controller-->
         <scene sceneID="RwD-ZV-2eg">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="VuP-Mx-pa0" customClass="HomeViewController" customModule="EMenu__урезанныи__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="VuP-Mx-pa0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0kX-Qw-PDW">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,15 +271,139 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wt3-oK-bK1">
+                                <rect key="frame" x="0.0" y="761" width="390" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Каталог" id="UT3-rh-FWn">
+                                        <imageReference key="image" image="book.fill" catalog="system" symbolScale="medium"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Корзина" id="Xeh-hU-k9H">
+                                        <imageReference key="image" image="cart.fill" catalog="system" symbolScale="medium"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Профиль" id="VrC-VS-63Y">
+                                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="medium"/>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f5A-dt-oZ3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Van-DY-TQg"/>
+                    <connections>
+                        <outlet property="cartTab" destination="Xeh-hU-k9H" id="jJQ-A6-Hmr"/>
+                        <outlet property="catalog" destination="UT3-rh-FWn" id="w61-Qc-PwC"/>
+                        <outlet property="mainTabBar" destination="Wt3-oK-bK1" id="nsm-QV-JC1"/>
+                        <outlet property="profileTab" destination="VrC-VS-63Y" id="awX-Hn-lo5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIT-Eg-QU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2903.0769230769229" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="2600" y="-1059"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="lRY-go-0wV">
+            <objects>
+                <viewController id="YEA-MV-8Sd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yCY-1Q-nEP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Профиль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ias-Ta-lin">
+                                <rect key="frame" x="174" y="412" width="133" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N4n-La-Oc1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="dwu-pv-39p">
+                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99H-tx-QLU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4342" y="704"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="Lue-gS-cPQ">
+            <objects>
+                <viewController id="eZP-rL-nbT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3c1-I7-hXz">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Корзина" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNG-cp-BoP">
+                                <rect key="frame" x="174" y="396" width="127" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BCy-Ov-Hew"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" id="QTj-ul-JsY">
+                        <imageReference key="image" image="cart.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20u-4x-kpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4342" y="-2"/>
+        </scene>
+        <!--Catalog-->
+        <scene sceneID="XIQ-Nn-gJK">
+            <objects>
+                <viewController id="OIf-VF-8dp" customClass="HomeViewController" customModule="EMenu__урезанныи__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l0c-Sq-zAS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Каталог продуктов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-x5-Ibt">
+                                <rect key="frame" x="87" y="354" width="251" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M9e-Ia-eAX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Catalog" id="BdV-cc-zWo">
+                        <imageReference key="image" image="book.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="yCc-g6-LQD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xa8-tt-cxr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4343" y="-685"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CU2-1K-n7f">
+            <objects>
+                <tabBarController id="S1U-BM-yDc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2ad-TC-2f5"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s6b-Vp-5XR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OIf-VF-8dp" kind="relationship" relationship="viewControllers" id="E1C-s6-B2g"/>
+                        <segue destination="eZP-rL-nbT" kind="relationship" relationship="viewControllers" id="IPy-Mc-Cl2"/>
+                        <segue destination="YEA-MV-8Sd" kind="relationship" relationship="viewControllers" id="KmV-Xn-0Ew"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5C-60-ssl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3185" y="-2"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="IuN-L7-s2y">
@@ -465,7 +590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BU1-P3-7dD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929.2307692307691" y="372.51184834123222"/>
+            <point key="canvasLocation" x="1929" y="412"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G6K-LG-1g1">
@@ -491,6 +616,9 @@
         <segue reference="xOd-c9-hzA"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="Color">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

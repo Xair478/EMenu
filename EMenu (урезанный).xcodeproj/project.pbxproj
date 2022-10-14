@@ -76,8 +76,7 @@
 		BF60F6B528F60145006E1DEE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BF60F6B928F606A2006E1DEE /* Custom UI's */,
-				BFCC119128F657B200FBEA82 /* Constants.swift */,
+				BFCC119328F8ECA600FBEA82 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,20 +93,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		BF60F6B928F606A2006E1DEE /* Custom UI's */ = {
-			isa = PBXGroup;
-			children = (
-				BFCF0F5328EB297F00D867BB /* CustomTextField.swift */,
-				BFCF0F5528EB2C8200D867BB /* CustomButton.swift */,
-			);
-			path = "Custom UI's";
-			sourceTree = "<group>";
-		};
 		BFCC119528F8EDE900FBEA82 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				BFCC119328F8ECA600FBEA82 /* Product.swift */,
+				BFCC119128F657B200FBEA82 /* Constants.swift */,
 				BFCC118F28F6497800FBEA82 /* Abilities.swift */,
+				BFCF0F5328EB297F00D867BB /* CustomTextField.swift */,
+				BFCF0F5528EB2C8200D867BB /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
