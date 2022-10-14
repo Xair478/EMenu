@@ -271,9 +271,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQg-vA-kRM">
+                                <rect key="frame" x="0.0" y="47" width="390" height="181"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6LA-ps-b8q">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="181"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N29-8Z-9CE">
+                                <rect key="frame" x="0.0" y="228" width="390" height="533"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N4n-La-Oc1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UQg-vA-kRM" secondAttribute="bottom" constant="616" id="7OH-Ua-ld1"/>
+                            <constraint firstItem="N29-8Z-9CE" firstAttribute="top" secondItem="UQg-vA-kRM" secondAttribute="bottom" id="DMO-rH-GLN"/>
+                            <constraint firstItem="UQg-vA-kRM" firstAttribute="leading" secondItem="N4n-La-Oc1" secondAttribute="leading" id="OnM-IP-Rpr"/>
+                            <constraint firstItem="UQg-vA-kRM" firstAttribute="top" secondItem="N4n-La-Oc1" secondAttribute="top" id="WBh-M9-cCu"/>
+                            <constraint firstItem="N4n-La-Oc1" firstAttribute="trailing" secondItem="N29-8Z-9CE" secondAttribute="trailing" id="bh6-z6-u01"/>
+                            <constraint firstItem="N4n-La-Oc1" firstAttribute="bottom" secondItem="N29-8Z-9CE" secondAttribute="bottom" id="drl-Ox-KLj"/>
+                            <constraint firstItem="N29-8Z-9CE" firstAttribute="leading" secondItem="N4n-La-Oc1" secondAttribute="leading" id="j91-Cm-8Mc"/>
+                            <constraint firstItem="N4n-La-Oc1" firstAttribute="trailing" secondItem="UQg-vA-kRM" secondAttribute="trailing" id="onR-N2-SRC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="dwu-pv-39p">
                         <imageReference key="image" image="person.fill" catalog="system" symbolScale="medium"/>
@@ -298,9 +319,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sc-Xm-eZD">
+                                <rect key="frame" x="0.0" y="47" width="390" height="177"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CT8-CW-uax">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="177"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CT8-CW-uax" secondAttribute="trailing" id="MMY-nQ-JDz"/>
+                                    <constraint firstItem="CT8-CW-uax" firstAttribute="top" secondItem="4Sc-Xm-eZD" secondAttribute="top" id="V3J-Mx-rpL"/>
+                                    <constraint firstItem="CT8-CW-uax" firstAttribute="leading" secondItem="4Sc-Xm-eZD" secondAttribute="leading" id="cGb-KP-d9r"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yho-Gf-TQY">
+                                <rect key="frame" x="0.0" y="224" width="390" height="537"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BCy-Ov-Hew"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BCy-Ov-Hew" firstAttribute="trailing" secondItem="Yho-Gf-TQY" secondAttribute="trailing" id="L27-yD-KzK"/>
+                            <constraint firstItem="4Sc-Xm-eZD" firstAttribute="top" secondItem="BCy-Ov-Hew" secondAttribute="top" id="N9U-uB-OPO"/>
+                            <constraint firstItem="4Sc-Xm-eZD" firstAttribute="leading" secondItem="Yho-Gf-TQY" secondAttribute="leading" id="UqT-uU-ICU"/>
+                            <constraint firstItem="Yho-Gf-TQY" firstAttribute="leading" secondItem="BCy-Ov-Hew" secondAttribute="leading" id="XP7-BC-GYH"/>
+                            <constraint firstItem="BCy-Ov-Hew" firstAttribute="bottom" secondItem="Yho-Gf-TQY" secondAttribute="bottom" id="gge-HJ-pLs"/>
+                            <constraint firstItem="Yho-Gf-TQY" firstAttribute="top" secondItem="4Sc-Xm-eZD" secondAttribute="bottom" id="lcO-Mq-Ywm"/>
+                            <constraint firstItem="4Sc-Xm-eZD" firstAttribute="trailing" secondItem="Yho-Gf-TQY" secondAttribute="trailing" id="xbi-m6-2pJ"/>
+                            <constraint firstAttribute="bottom" secondItem="4Sc-Xm-eZD" secondAttribute="bottom" constant="620" id="zKS-ce-BZp"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cart" id="QTj-ul-JsY">
                         <imageReference key="image" image="cart.fill" catalog="system" symbolScale="medium"/>
@@ -318,16 +365,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Каталог продуктов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-x5-Ibt">
-                                <rect key="frame" x="87" y="354" width="251" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Каталог продуктов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-x5-Ibt">
+                                <rect key="frame" x="70" y="521" width="251" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-Pi-fch">
+                                <rect key="frame" x="0.0" y="47" width="390" height="177"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dEz-u7-iOf">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="177"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hbq-1Q-vgN">
+                                <rect key="frame" x="0.0" y="234" width="390" height="527"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M9e-Ia-eAX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M9e-Ia-eAX" firstAttribute="trailing" secondItem="xdI-Pi-fch" secondAttribute="trailing" id="5yG-oj-meE"/>
+                            <constraint firstItem="hbq-1Q-vgN" firstAttribute="leading" secondItem="M9e-Ia-eAX" secondAttribute="leading" id="Jna-IN-vmU"/>
+                            <constraint firstItem="xdI-Pi-fch" firstAttribute="top" secondItem="M9e-Ia-eAX" secondAttribute="top" id="LXW-ng-zOc"/>
+                            <constraint firstItem="xdI-Pi-fch" firstAttribute="leading" secondItem="M9e-Ia-eAX" secondAttribute="leading" id="PyZ-9t-vYU"/>
+                            <constraint firstItem="hbq-1Q-vgN" firstAttribute="top" secondItem="xdI-Pi-fch" secondAttribute="bottom" constant="10" id="TsD-ax-S6E"/>
+                            <constraint firstAttribute="bottom" secondItem="xdI-Pi-fch" secondAttribute="bottom" constant="620" id="WXm-vF-aer"/>
+                            <constraint firstItem="M9e-Ia-eAX" firstAttribute="bottom" secondItem="hbq-1Q-vgN" secondAttribute="bottom" id="XyZ-Y8-CUj"/>
+                            <constraint firstItem="M9e-Ia-eAX" firstAttribute="bottom" secondItem="0dT-x5-Ibt" secondAttribute="bottom" constant="205" id="isy-SO-jet"/>
+                            <constraint firstItem="M9e-Ia-eAX" firstAttribute="trailing" secondItem="hbq-1Q-vgN" secondAttribute="trailing" id="kev-bn-cRC"/>
+                            <constraint firstItem="xdI-Pi-fch" firstAttribute="centerX" secondItem="0dT-x5-Ibt" secondAttribute="centerX" id="mxH-j2-YMO"/>
+                            <constraint firstItem="0dT-x5-Ibt" firstAttribute="leading" secondItem="M9e-Ia-eAX" secondAttribute="leading" constant="70" id="z2m-xq-4O4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Catalog" id="BdV-cc-zWo">
                         <imageReference key="image" image="book.fill" catalog="system" symbolScale="medium"/>
@@ -336,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xa8-tt-cxr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4343" y="-685"/>
+            <point key="canvasLocation" x="4341.538461538461" y="-685.30805687203792"/>
         </scene>
         <!--Home Tab View Controller-->
         <scene sceneID="CU2-1K-n7f">
