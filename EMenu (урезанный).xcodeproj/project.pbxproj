@@ -12,6 +12,7 @@
 		BF60F6BB28F609B1006E1DEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60F6BA28F609B1006E1DEE /* HomeViewController.swift */; };
 		BFCC119028F6497800FBEA82 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC118F28F6497800FBEA82 /* Abilities.swift */; };
 		BFCC119228F657B200FBEA82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC119128F657B200FBEA82 /* Constants.swift */; };
+		BFCC119428F8ECA600FBEA82 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC119328F8ECA600FBEA82 /* Product.swift */; };
 		BFCF0F3E28E864F900D867BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF0F3D28E864F900D867BB /* AppDelegate.swift */; };
 		BFCF0F4028E864F900D867BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF0F3F28E864F900D867BB /* SceneDelegate.swift */; };
 		BFCF0F4228E864F900D867BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF0F4128E864F900D867BB /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		BF60F6BA28F609B1006E1DEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BFCC118F28F6497800FBEA82 /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
 		BFCC119128F657B200FBEA82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BFCC119328F8ECA600FBEA82 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		BFCF0F3A28E864F900D867BB /* EMenu (урезанный).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EMenu (урезанный).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCF0F3D28E864F900D867BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCF0F3F28E864F900D867BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,10 +66,9 @@
 		BF60F6B428F60127006E1DEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BFCF0F4128E864F900D867BB /* ViewController.swift */,
-				BF60F6B028F60109006E1DEE /* SIgnUpViewController.swift */,
-				BF60F6B228F60119006E1DEE /* LoginViewController.swift */,
-				BF60F6BA28F609B1006E1DEE /* HomeViewController.swift */,
+				BFCF0F4328E864F900D867BB /* Main.storyboard */,
+				BFCF0F4628E864FB00D867BB /* Assets.xcassets */,
+				BFCF0F4828E864FB00D867BB /* LaunchScreen.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -84,9 +85,11 @@
 		BF60F6B628F6039A006E1DEE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BFCF0F4328E864F900D867BB /* Main.storyboard */,
-				BFCF0F4628E864FB00D867BB /* Assets.xcassets */,
-				BFCF0F4828E864FB00D867BB /* LaunchScreen.storyboard */,
+				BFCF0F4128E864F900D867BB /* ViewController.swift */,
+				BF60F6B028F60109006E1DEE /* SIgnUpViewController.swift */,
+				BF60F6B228F60119006E1DEE /* LoginViewController.swift */,
+				BF60F6BA28F609B1006E1DEE /* HomeViewController.swift */,
+				BFCC119528F8EDE900FBEA82 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +101,15 @@
 				BFCF0F5528EB2C8200D867BB /* CustomButton.swift */,
 			);
 			path = "Custom UI's";
+			sourceTree = "<group>";
+		};
+		BFCC119528F8EDE900FBEA82 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BFCC119328F8ECA600FBEA82 /* Product.swift */,
+				BFCC118F28F6497800FBEA82 /* Abilities.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		BFCF0F3128E864F900D867BB = {
@@ -126,7 +138,6 @@
 				BF60F6B628F6039A006E1DEE /* View */,
 				BF60F6B528F60145006E1DEE /* Models */,
 				BF60F6B428F60127006E1DEE /* Controllers */,
-				BFCC118F28F6497800FBEA82 /* Abilities.swift */,
 			);
 			path = "EMenu (урезанный)";
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 				BFCF0F4228E864F900D867BB /* ViewController.swift in Sources */,
 				BF60F6BB28F609B1006E1DEE /* HomeViewController.swift in Sources */,
 				BF60F6B128F60109006E1DEE /* SIgnUpViewController.swift in Sources */,
+				BFCC119428F8ECA600FBEA82 /* Product.swift in Sources */,
 				BFCC119228F657B200FBEA82 /* Constants.swift in Sources */,
 				BFCF0F3E28E864F900D867BB /* AppDelegate.swift in Sources */,
 				BFCF0F4028E864F900D867BB /* SceneDelegate.swift in Sources */,
