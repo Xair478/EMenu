@@ -69,28 +69,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SIgnUpViewController" customModule="EMenu__урезанныи__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CustomButton" customModule="EMenu__урезанныи__" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="mzD-Mr-KpY">
-                                <rect key="frame" x="20" y="87.000000000000028" width="350" height="483.66666666666674"/>
+                                <rect key="frame" x="20" y="131.00000000000003" width="350" height="439.66666666666674"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EUX-tx-bGl">
-                                        <rect key="frame" x="10" y="0.0" width="330" height="43.333333333333336"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EUX-tx-bGl">
+                                        <rect key="frame" x="10" y="0.0" width="330" height="30.666666666666668"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMenu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJr-Lz-zqK">
-                                                <rect key="frame" x="113.66666666666666" y="0.0" width="102.66666666666666" height="43.333333333333336"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="EMenu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJr-Lz-zqK">
+                                                <rect key="frame" x="113.66666666666666" y="0.0" width="102.66666666666666" height="30.666666666666668"/>
                                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="33"/>
                                                 <color key="textColor" name="Color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="562-Jx-WBn">
-                                        <rect key="frame" x="10" y="89.333333333333343" width="330" height="31.333333333333329"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="562-Jx-WBn">
+                                        <rect key="frame" x="10" y="76.666666666666657" width="330" height="0.0"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9c-7f-qt3">
-                                                <rect key="frame" x="120.66666666666666" y="0.0" width="88.666666666666657" height="31.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9c-7f-qt3">
+                                                <rect key="frame" x="120.66666666666666" y="0.0" width="88.666666666666657" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-Hn-FWG">
-                                        <rect key="frame" x="20" y="166.66666666666663" width="310" height="230"/>
+                                        <rect key="frame" x="20" y="122.66666666666666" width="310" height="229.99999999999997"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cbi-4W-zYH">
                                                 <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
@@ -171,7 +171,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-3" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-7S-lyc">
-                                        <rect key="frame" x="10" y="442.66666666666663" width="330" height="41"/>
+                                        <rect key="frame" x="10" y="398.66666666666663" width="330" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-rL-tA1" customClass="CustomButton" customModule="EMenu__урезанныи__" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="41"/>
@@ -201,10 +201,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N6w-Kn-B0E">
-                                <rect key="frame" x="10" y="610.66666666666663" width="370" height="151.33333333333337"/>
+                                <rect key="frame" x="10" y="610.66666666666663" width="370" height="174.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlw-16-SKW">
-                                        <rect key="frame" x="0.0" y="0.0" width="370" height="129"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="152"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Already have an account? Sign in"/>
                                         <connections>
@@ -212,7 +212,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kzI-Fc-nBh">
-                                        <rect key="frame" x="0.0" y="129" width="370" height="22.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="152" width="370" height="22.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2k-Bi-PoI">
                                                 <rect key="frame" x="165" y="0.0" width="40" height="22.333333333333332"/>
@@ -410,11 +410,11 @@
             <objects>
                 <viewController id="VBm-qj-R1G" customClass="LoginViewController" customModule="EMenu__урезанныи__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6rh-53-7HP">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RAF-Qb-UJS">
-                                <rect key="frame" x="10" y="547.66666666666663" width="370" height="56.666666666666629"/>
+                                <rect key="frame" x="10" y="591.66666666666663" width="370" height="56.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITK-Pv-vFa">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="34.333333333333336"/>
@@ -443,7 +443,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-Bc-rb7">
-                                <rect key="frame" x="20" y="87.000000000000028" width="350" height="420.66666666666674"/>
+                                <rect key="frame" x="20" y="131.00000000000003" width="350" height="420.66666666666674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="THN-s5-HrP">
                                         <rect key="frame" x="10" y="0.0" width="330" height="43.333333333333336"/>
@@ -468,7 +468,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="ASW-4L-yEc">
-                                        <rect key="frame" x="20" y="166.66666666666666" width="310" height="166.99999999999997"/>
+                                        <rect key="frame" x="20" y="166.66666666666669" width="310" height="167"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xYB-LU-ABd">
                                                 <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
@@ -491,7 +491,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cu6-Bs-xjv">
-                                                <rect key="frame" x="0.0" y="63.000000000000028" width="310" height="41"/>
+                                                <rect key="frame" x="0.0" y="63" width="310" height="41"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="xc6-Ue-kZZ" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
@@ -511,7 +511,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Ie-wa-bhO">
-                                                <rect key="frame" x="0.0" y="126.00000000000003" width="310" height="41"/>
+                                                <rect key="frame" x="0.0" y="126" width="310" height="41"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3ag-yB-FyN" customClass="CustomTextField" customModule="EMenu__урезанныи__" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="310" height="41"/>
@@ -612,7 +612,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y9j-MH-F5A"/>
+        <segue reference="EKR-nc-FbR"/>
         <segue reference="xOd-c9-hzA"/>
     </inferredMetricsTieBreakers>
     <resources>
