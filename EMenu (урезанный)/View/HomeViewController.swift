@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
-    
+    @IBOutlet weak var recomendedCollectionView: UICollectionView!
     
     
     var categories: [DishCategory] = [
@@ -29,21 +29,27 @@ class HomeViewController: UIViewController {
         .init(id: "id3", name: "Lasagne", description: "This is the best i have ever tasted", image: "https://picsum.photos/100/200", amount: 4000)
     ]
     
-    
-    
-    
+    var recomended: [Dish] = [
+        .init(id: "id2", name: "Pasta", description: "This is the best i have ever tasted", image: "https://picsum.photos/100/200", amount: 3000),
+        .init(id: "id3", name: "Lasagne", description: "This is the best i have ever tasted", image: "https://picsum.photos/100/200", amount: 4000)
+    ]
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        recomendedCollectionView.dataSource = self
+        recomendedCollectionView.delegate = self
         registerCell()
-        
     }
+    
+    
+    
     
     private func registerCell() {
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         popularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
+        recomendedCollectionView.register(UINib(nibName: DishLandscapeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
     }
 
     
@@ -58,6 +64,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return categories.count
         case popularCollectionView:
             return populars.count
+        case recomendedCollectionView:
+            return recomended.count
         default: return 0
         }
         
@@ -73,11 +81,20 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishPortraitCollectionViewCell.identifier, for: indexPath) as! DishPortraitCollectionViewCell
             cell.setup(dish: populars[indexPath.row])
             return cell
+        case recomendedCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath) as! DishLandscapeCollectionViewCell
+            cell.setup(dish: recomended[indexPath.row])
+            return cell
         default: return UICollectionViewCell()
         }
-        
-        
-        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            
+        }else{
+            
+        }
         
     }
     

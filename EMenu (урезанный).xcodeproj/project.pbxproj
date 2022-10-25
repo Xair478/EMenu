@@ -19,6 +19,8 @@
 		BF2FDB45290801FB007EC927 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB44290801FB007EC927 /* Dish.swift */; };
 		BF2FDB49290822A0007EC927 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB472908229F007EC927 /* DishLandscapeCollectionViewCell.swift */; };
 		BF2FDB4A290822A0007EC927 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2FDB48290822A0007EC927 /* DishLandscapeCollectionViewCell.xib */; };
+		BF2FDB4D2908396D007EC927 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB4C2908396D007EC927 /* DishDetailViewController.swift */; };
+		BF2FDB4F29083B2C007EC927 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB4E29083B2C007EC927 /* UIViewController+Extension.swift */; };
 		BF60F6B128F60109006E1DEE /* SIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60F6B028F60109006E1DEE /* SIgnUpViewController.swift */; };
 		BF60F6B328F60119006E1DEE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60F6B228F60119006E1DEE /* LoginViewController.swift */; };
 		BFCC119028F6497800FBEA82 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC118F28F6497800FBEA82 /* Abilities.swift */; };
@@ -51,6 +53,8 @@
 		BF2FDB44290801FB007EC927 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		BF2FDB472908229F007EC927 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF2FDB48290822A0007EC927 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		BF2FDB4C2908396D007EC927 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		BF2FDB4E29083B2C007EC927 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BF60F6B028F60109006E1DEE /* SIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnUpViewController.swift; sourceTree = "<group>"; };
 		BF60F6B228F60119006E1DEE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BFCC118F28F6497800FBEA82 /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				BF60F6B028F60109006E1DEE /* SIgnUpViewController.swift */,
 				BF60F6B228F60119006E1DEE /* LoginViewController.swift */,
 				BF2FDB2C2906E3BC007EC927 /* HomeViewController.swift */,
+				BF2FDB4C2908396D007EC927 /* DishDetailViewController.swift */,
 				BFCC119528F8EDE900FBEA82 /* Components */,
 			);
 			path = View;
@@ -172,6 +177,7 @@
 				BFCF0F5328EB297F00D867BB /* CustomTextField.swift */,
 				BFCF0F5528EB2C8200D867BB /* CustomButton.swift */,
 				BF2FDB3A2907F191007EC927 /* String+Extension.swift */,
+				BF2FDB4E29083B2C007EC927 /* UIViewController+Extension.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 				BF2FDB422907FF8C007EC927 /* DishPortraitCollectionViewCell.swift in Sources */,
 				BFCF0F4228E864F900D867BB /* ViewController.swift in Sources */,
 				BF2FDB3E2907FA94007EC927 /* CardView.swift in Sources */,
+				BF2FDB4F29083B2C007EC927 /* UIViewController+Extension.swift in Sources */,
 				BF60F6B128F60109006E1DEE /* SIgnUpViewController.swift in Sources */,
 				BF2FDB332907EB35007EC927 /* CategoryCollectionViewCell.swift in Sources */,
 				BFCC119428F8ECA600FBEA82 /* Product.swift in Sources */,
@@ -315,6 +322,7 @@
 				BF2FDB3B2907F191007EC927 /* String+Extension.swift in Sources */,
 				BFCF0F3E28E864F900D867BB /* AppDelegate.swift in Sources */,
 				BF2FDB2D2906E3BC007EC927 /* HomeViewController.swift in Sources */,
+				BF2FDB4D2908396D007EC927 /* DishDetailViewController.swift in Sources */,
 				BFCF0F4028E864F900D867BB /* SceneDelegate.swift in Sources */,
 				BFCF0F5628EB2C8200D867BB /* CustomButton.swift in Sources */,
 				BFCC119028F6497800FBEA82 /* Abilities.swift in Sources */,

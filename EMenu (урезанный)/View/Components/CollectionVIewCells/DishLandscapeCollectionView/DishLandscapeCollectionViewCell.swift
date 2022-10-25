@@ -23,5 +23,15 @@ class DishLandscapeCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
+    
+    func setup(dish: Dish){
+        dishImageView.kf.setImage(with: dish.image?.asUrl)
+        titleLbl.text = dish.name
+        descriptionLbl.text = dish.description
+        amountLbl.text = dish.formattedAmount
+    }
+    
+    
+    
 }
  
