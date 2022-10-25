@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2FDB2D2906E3BC007EC927 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB2C2906E3BC007EC927 /* HomeViewController.swift */; };
+		BF2FDB332907EB35007EC927 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB312907EB35007EC927 /* CategoryCollectionViewCell.swift */; };
+		BF2FDB342907EB35007EC927 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2FDB322907EB35007EC927 /* CategoryCollectionViewCell.xib */; };
+		BF2FDB362907ECFD007EC927 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB352907ECFD007EC927 /* DishCategory.swift */; };
+		BF2FDB392907F076007EC927 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BF2FDB382907F076007EC927 /* Kingfisher */; };
+		BF2FDB3B2907F191007EC927 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB3A2907F191007EC927 /* String+Extension.swift */; };
+		BF2FDB3E2907FA94007EC927 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB3D2907FA93007EC927 /* CardView.swift */; };
+		BF2FDB422907FF8C007EC927 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB402907FF8C007EC927 /* DishPortraitCollectionViewCell.swift */; };
+		BF2FDB432907FF8C007EC927 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2FDB412907FF8C007EC927 /* DishPortraitCollectionViewCell.xib */; };
+		BF2FDB45290801FB007EC927 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB44290801FB007EC927 /* Dish.swift */; };
+		BF2FDB49290822A0007EC927 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FDB472908229F007EC927 /* DishLandscapeCollectionViewCell.swift */; };
+		BF2FDB4A290822A0007EC927 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2FDB48290822A0007EC927 /* DishLandscapeCollectionViewCell.xib */; };
 		BF60F6B128F60109006E1DEE /* SIgnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60F6B028F60109006E1DEE /* SIgnUpViewController.swift */; };
 		BF60F6B328F60119006E1DEE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60F6B228F60119006E1DEE /* LoginViewController.swift */; };
 		BFCC119028F6497800FBEA82 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC118F28F6497800FBEA82 /* Abilities.swift */; };
 		BFCC119228F657B200FBEA82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC119128F657B200FBEA82 /* Constants.swift */; };
 		BFCC119428F8ECA600FBEA82 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC119328F8ECA600FBEA82 /* Product.swift */; };
-		BFCC119F28F9621500FBEA82 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC119E28F9621500FBEA82 /* HomeTabViewController.swift */; };
 		BFCF0F3E28E864F900D867BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF0F3D28E864F900D867BB /* AppDelegate.swift */; };
 		BFCF0F4028E864F900D867BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF0F3F28E864F900D867BB /* SceneDelegate.swift */; };
 		BFCF0F4228E864F900D867BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF0F4128E864F900D867BB /* ViewController.swift */; };
@@ -29,12 +40,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF2FDB2C2906E3BC007EC927 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF2FDB312907EB35007EC927 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF2FDB322907EB35007EC927 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		BF2FDB352907ECFD007EC927 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		BF2FDB3A2907F191007EC927 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BF2FDB3D2907FA93007EC927 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BF2FDB402907FF8C007EC927 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF2FDB412907FF8C007EC927 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
+		BF2FDB44290801FB007EC927 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		BF2FDB472908229F007EC927 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF2FDB48290822A0007EC927 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		BF60F6B028F60109006E1DEE /* SIgnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnUpViewController.swift; sourceTree = "<group>"; };
 		BF60F6B228F60119006E1DEE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BFCC118F28F6497800FBEA82 /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
 		BFCC119128F657B200FBEA82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BFCC119328F8ECA600FBEA82 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		BFCC119E28F9621500FBEA82 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		BFCF0F3A28E864F900D867BB /* EMenu (урезанный).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EMenu (урезанный).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCF0F3D28E864F900D867BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCF0F3F28E864F900D867BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +78,58 @@
 				BFFAF6E828F63B4E00D433BC /* FirebaseFirestore in Frameworks */,
 				BFFAF6E228F63B4E00D433BC /* FirebaseAnalytics in Frameworks */,
 				BFFAF6E428F63B4E00D433BC /* FirebaseAuth in Frameworks */,
+				BF2FDB392907F076007EC927 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF2FDB2F2907EAD1007EC927 /* CollectionVIewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BF2FDB462908224A007EC927 /* DishLandscapeCollectionView */,
+				BF2FDB3F2907FF31007EC927 /* DishCollectionViewCell */,
+				BF2FDB302907EAED007EC927 /* CatehoryViewCells */,
+			);
+			path = CollectionVIewCells;
+			sourceTree = "<group>";
+		};
+		BF2FDB302907EAED007EC927 /* CatehoryViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BF2FDB312907EB35007EC927 /* CategoryCollectionViewCell.swift */,
+				BF2FDB322907EB35007EC927 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CatehoryViewCells;
+			sourceTree = "<group>";
+		};
+		BF2FDB3C2907FA6C007EC927 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				BF2FDB3D2907FA93007EC927 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		BF2FDB3F2907FF31007EC927 /* DishCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF2FDB402907FF8C007EC927 /* DishPortraitCollectionViewCell.swift */,
+				BF2FDB412907FF8C007EC927 /* DishPortraitCollectionViewCell.xib */,
+			);
+			path = DishCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		BF2FDB462908224A007EC927 /* DishLandscapeCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BF2FDB472908229F007EC927 /* DishLandscapeCollectionViewCell.swift */,
+				BF2FDB48290822A0007EC927 /* DishLandscapeCollectionViewCell.xib */,
+			);
+			path = DishLandscapeCollectionView;
+			sourceTree = "<group>";
+		};
 		BF60F6B428F60127006E1DEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				BFCC119328F8ECA600FBEA82 /* Product.swift */,
+				BF2FDB352907ECFD007EC927 /* DishCategory.swift */,
+				BF2FDB44290801FB007EC927 /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -87,7 +156,7 @@
 				BFCF0F4128E864F900D867BB /* ViewController.swift */,
 				BF60F6B028F60109006E1DEE /* SIgnUpViewController.swift */,
 				BF60F6B228F60119006E1DEE /* LoginViewController.swift */,
-				BFCC119E28F9621500FBEA82 /* HomeTabViewController.swift */,
+				BF2FDB2C2906E3BC007EC927 /* HomeViewController.swift */,
 				BFCC119528F8EDE900FBEA82 /* Components */,
 			);
 			path = View;
@@ -96,12 +165,22 @@
 		BFCC119528F8EDE900FBEA82 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BF2FDB3C2907FA6C007EC927 /* CardView */,
+				BF2FDB2F2907EAD1007EC927 /* CollectionVIewCells */,
 				BFCC119128F657B200FBEA82 /* Constants.swift */,
 				BFCC118F28F6497800FBEA82 /* Abilities.swift */,
 				BFCF0F5328EB297F00D867BB /* CustomTextField.swift */,
 				BFCF0F5528EB2C8200D867BB /* CustomButton.swift */,
+				BF2FDB3A2907F191007EC927 /* String+Extension.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		BFCC11A0290051B900FBEA82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		BFCF0F3128E864F900D867BB = {
@@ -127,8 +206,9 @@
 				BFFAF6DE28F6328C00D433BC /* GoogleService-Info.plist */,
 				BFCF0F3D28E864F900D867BB /* AppDelegate.swift */,
 				BFCF0F3F28E864F900D867BB /* SceneDelegate.swift */,
-				BF60F6B628F6039A006E1DEE /* View */,
 				BF60F6B528F60145006E1DEE /* Models */,
+				BF60F6B628F6039A006E1DEE /* View */,
+				BFCC11A0290051B900FBEA82 /* ViewModel */,
 				BF60F6B428F60127006E1DEE /* Controllers */,
 			);
 			path = "EMenu (урезанный)";
@@ -155,6 +235,7 @@
 				BFFAF6E328F63B4E00D433BC /* FirebaseAuth */,
 				BFFAF6E528F63B4E00D433BC /* FirebaseDatabaseSwift */,
 				BFFAF6E728F63B4E00D433BC /* FirebaseFirestore */,
+				BF2FDB382907F076007EC927 /* Kingfisher */,
 			);
 			productName = "EMenu (урезанный)";
 			productReference = BFCF0F3A28E864F900D867BB /* EMenu (урезанный).app */;
@@ -186,6 +267,7 @@
 			mainGroup = BFCF0F3128E864F900D867BB;
 			packageReferences = (
 				BFFAF6E028F63B4E00D433BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BF2FDB372907F076007EC927 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = BFCF0F3B28E864F900D867BB /* Products */;
 			projectDirPath = "";
@@ -202,8 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCF0F4A28E864FB00D867BB /* LaunchScreen.storyboard in Resources */,
+				BF2FDB432907FF8C007EC927 /* DishPortraitCollectionViewCell.xib in Resources */,
+				BF2FDB342907EB35007EC927 /* CategoryCollectionViewCell.xib in Resources */,
 				BFFAF6DF28F6328C00D433BC /* GoogleService-Info.plist in Resources */,
 				BFCF0F4728E864FB00D867BB /* Assets.xcassets in Resources */,
+				BF2FDB4A290822A0007EC927 /* DishLandscapeCollectionViewCell.xib in Resources */,
 				BFCF0F4528E864F900D867BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,13 +301,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF60F6B328F60119006E1DEE /* LoginViewController.swift in Sources */,
+				BF2FDB45290801FB007EC927 /* Dish.swift in Sources */,
+				BF2FDB49290822A0007EC927 /* DishLandscapeCollectionViewCell.swift in Sources */,
+				BF2FDB362907ECFD007EC927 /* DishCategory.swift in Sources */,
 				BFCF0F5428EB297F00D867BB /* CustomTextField.swift in Sources */,
+				BF2FDB422907FF8C007EC927 /* DishPortraitCollectionViewCell.swift in Sources */,
 				BFCF0F4228E864F900D867BB /* ViewController.swift in Sources */,
+				BF2FDB3E2907FA94007EC927 /* CardView.swift in Sources */,
 				BF60F6B128F60109006E1DEE /* SIgnUpViewController.swift in Sources */,
+				BF2FDB332907EB35007EC927 /* CategoryCollectionViewCell.swift in Sources */,
 				BFCC119428F8ECA600FBEA82 /* Product.swift in Sources */,
 				BFCC119228F657B200FBEA82 /* Constants.swift in Sources */,
+				BF2FDB3B2907F191007EC927 /* String+Extension.swift in Sources */,
 				BFCF0F3E28E864F900D867BB /* AppDelegate.swift in Sources */,
-				BFCC119F28F9621500FBEA82 /* HomeTabViewController.swift in Sources */,
+				BF2FDB2D2906E3BC007EC927 /* HomeViewController.swift in Sources */,
 				BFCF0F4028E864F900D867BB /* SceneDelegate.swift in Sources */,
 				BFCF0F5628EB2C8200D867BB /* CustomButton.swift in Sources */,
 				BFCC119028F6497800FBEA82 /* Abilities.swift in Sources */,
@@ -445,6 +537,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BF2FDB372907F076007EC927 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		BFFAF6E028F63B4E00D433BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -456,6 +556,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BF2FDB382907F076007EC927 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF2FDB372907F076007EC927 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		BFFAF6E128F63B4E00D433BC /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BFFAF6E028F63B4E00D433BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

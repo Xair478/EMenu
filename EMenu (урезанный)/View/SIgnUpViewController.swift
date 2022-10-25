@@ -106,7 +106,7 @@ class SIgnUpViewController: UIViewController {
             }
             
             //Transition to home page
-            self.transitionToHome()
+            //self.transitionToHome()
         }
     }
     
@@ -118,10 +118,11 @@ class SIgnUpViewController: UIViewController {
         errorLabel.alpha = 1
     }
 
+    /*
     func transitionToHome() {
         let HomeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeTabBarViewController) as? HomeTabViewController
         
         self.view.window?.rootViewController = HomeVC
         self.view.window?.makeKeyAndVisible()
-    }
+    } */
 }

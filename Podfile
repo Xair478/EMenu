@@ -7,9 +7,8 @@ target 'EMenu (урезанный)' do
 
   # Pods for EMenu (урезанный)
 
-pod 'Firebase/Analytics'
-pod 'Firebase/Auth'
-pod 'Firebase/Core'
-pod 'Firebase/Firestore'
+pod 'Kingfisher'
+
+
 
 end
