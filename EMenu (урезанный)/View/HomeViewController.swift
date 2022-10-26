@@ -93,7 +93,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if collectionView == categoryCollectionView {
             
         }else{
-            
+            let controller = DishDetailViewController.instantiate()
+            controller.dish = collectionView == popularCollectionView ? populars[indexPath.row] : recomended[indexPath.row]
+            navigationController?.present(controller, animated: true)
         }
         
     }

@@ -18,12 +18,19 @@ class DishDetailViewController: UIViewController {
     @IBAction func orderButtonClicked(_ sender: UIButton) {
     }
     
+    var dish: Dish!
+    
+    private func populateView() {
+        dishImageView.kf.setImage(with: dish.image?.asUrl)
+        titleLbl.text = dish.name
+        descriptionLbl.text = dish.description
+        amountLbl.text = dish.formattedAmount
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        populateView()
     }
     
 
