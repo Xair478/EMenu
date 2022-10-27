@@ -9,12 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    
+    //MARK: - OUtlets
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var recomendedCollectionView: UICollectionView!
     
-    
+    //MARK: -DishArrays
     var categories: [DishCategory] = [
         .init(id: "id1", name: "American", image: "https://picsum.photos/100/200"),
         .init(id: "id2", name: "American 2", image: "https://picsum.photos/100/200"),
@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
     ]
     
     
-    
+    //MARK: -View func
     override func viewDidLoad() {
         super.viewDidLoad()
         recomendedCollectionView.dataSource = self
@@ -45,7 +45,7 @@ class HomeViewController: UIViewController {
     
     
     
-    
+    //MARK: -Register Cells for CollectionView
     private func registerCell() {
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
         popularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
@@ -56,7 +56,7 @@ class HomeViewController: UIViewController {
 
 }
 
-
+//MARK: - extending home page with 3 CollectionViews and +extension with dishDetail page
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
@@ -91,7 +91,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoryCollectionView {
-            
+            let controller = ListDishesViewController.instantiate()
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
         }else{
             let controller = DishDetailViewController.instantiate()
             controller.dish = collectionView == popularCollectionView ? populars[indexPath.row] : recomended[indexPath.row]

@@ -9,6 +9,7 @@ import UIKit
 
 class CardView: UIView {
     
+    //MARK: -Initializing setup in the bottom
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialSetup()
@@ -19,6 +20,8 @@ class CardView: UIView {
         initialSetup()
     }
     
+    
+    //MARK: -Setup for every cell layer
     private func initialSetup() {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = .zero
