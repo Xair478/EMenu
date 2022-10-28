@@ -10,21 +10,14 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
-    
+    //MARK: - Outlets
     @IBOutlet weak var logoLabel: UILabel!
-    
     @IBOutlet weak var signInLabel: UILabel!
-    
     @IBOutlet weak var loginTextField: CustomTextField!
-    
     @IBOutlet weak var emailTextField: CustomTextField!
-    
     @IBOutlet weak var passwordTextField: CustomTextField!
-    
     @IBOutlet weak var signInButton: CustomButton!
-    
     @IBOutlet weak var regLinkButton: UIButton!
-    
     @IBOutlet weak var errorLabel: UILabel!
     
     
@@ -40,6 +33,7 @@ class LoginViewController: UIViewController {
     }
     
 
+    //MARK: - Actions
     @IBAction func signInTapped(_ sender: Any) {
         
         //Validate text fields
@@ -60,14 +54,16 @@ class LoginViewController: UIViewController {
     }
     
     
+    //MARK: -transition to page
     func transitionToHome() {
         let HomeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeTabBarViewController) as? HomeViewController
         
         self.view.window?.rootViewController = HomeVC
         self.view.window?.makeKeyAndVisible()
+        
     }
     
-  
+    
     
 
 }

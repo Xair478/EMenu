@@ -9,8 +9,11 @@ import UIKit
 
 class ListDishesViewController: UIViewController {
 
+    //MARK: -Outlets
     @IBOutlet weak var tableView: UITableView!
     
+    
+    //MARK: -Arrays
     var category: DishCategory!
     var dishes: [Dish] = [
         .init(id: "id1", name: "Pizza", description: "This is the best i have ever tasted", image: "https://picsum.photos/100/200", amount: 2500),
@@ -18,6 +21,7 @@ class ListDishesViewController: UIViewController {
         .init(id: "id3", name: "Lasagne", description: "This is the best i have ever tasted", image: "https://picsum.photos/100/200", amount: 4000)
     ]
     
+    //MARK: -Validate Cell
     private func registerCells() {
         tableView.register(UINib(nibName: DishListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: DishListTableViewCell.identifier)
     }
@@ -28,7 +32,7 @@ class ListDishesViewController: UIViewController {
     
     
     
-    
+    //MARK: -ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         title = category.name
@@ -38,7 +42,7 @@ class ListDishesViewController: UIViewController {
 }
 
 
-
+//MARK: -Extension
 extension ListDishesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         dishes.count

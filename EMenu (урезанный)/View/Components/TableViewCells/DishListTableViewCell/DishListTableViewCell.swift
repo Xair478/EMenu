@@ -9,11 +9,13 @@ import UIKit
 
 class DishListTableViewCell: UITableViewCell {
 
+    //MARK: -Outlets
     static let identifier = "DishListTableViewCell"
     @IBOutlet weak var dishImageView: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
     
+    //MARK: -SetupDishes
     func setup(dish: Dish) {
         dishImageView.kf.setImage(with: dish.image?.asUrl)
         titleLbl.text = dish.name
