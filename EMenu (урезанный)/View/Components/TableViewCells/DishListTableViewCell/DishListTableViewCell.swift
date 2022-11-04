@@ -22,12 +22,7 @@ class DishListTableViewCell: UITableViewCell {
         descriptionLbl.text = dish.description
     }
     
-    func setup(order: Order) {
-        dishImageView.kf.setImage(with: order.dish?.image?.asUrl)
-        titleLbl.text = order.dish?.name
-        descriptionLbl.text = order.name
-        
-    }
+    
     
     
 }

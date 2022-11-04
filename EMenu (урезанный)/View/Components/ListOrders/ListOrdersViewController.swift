@@ -40,16 +40,9 @@ class ListOrdersViewController: UIViewController {
     //MARK: -Extension
 extension ListOrdersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return orders.count
+        <#code#>
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DishListTableViewCell.identifier) as! DishListTableViewCell
-        cell.setup(order: orders[indexPath.row])
-        return cell
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller = DishDetailViewController.instantiate()
-        controller.dish = orders[indexPath.row].dish
-        navigationController?.pushViewController(controller, animated: true)
+        <#code#>
     }
 }
